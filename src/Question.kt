@@ -32,6 +32,43 @@ class Quiz : ProgressPrintable {
         var total : Int = 10
         var answered : Int = 3
     }
+
+    fun printQuiz(){
+//        println(question1.questionText)
+//        println(question1.anserw)
+//        println(question1.difficulrt)
+//        println()
+//
+//        println(question2.questionText)
+//        println(question2.anserw)
+//        println(question2.difficulrt)
+//        println()
+//
+//        println(question3.questionText)
+//        println(question3.anserw)
+//        println(question3.difficulrt)
+//        println()
+
+        question1.let {
+            println(it.questionText)
+            println(it.anserw)
+            println(it.difficulrt)
+        }
+        println()
+        question2.let {
+            println(it.questionText)
+            println(it.anserw)
+            println(it.difficulrt)
+        }
+        println()
+        question3.let {
+            println(it.questionText)
+            println(it.anserw)
+            println(it.difficulrt)
+        }
+        println()
+
+    }
 }
 
 //val Quiz.StudentProgress.progressText : String
@@ -51,5 +88,12 @@ fun main(){
 //    println("${Quiz.answered} of ${Quiz.total} anserwed")
 //    println(Quiz.progressText)
 //    Quiz.printProgressBar()
-    Quiz().printProgressBar()
+//    Quiz().printProgressBar()
+
+//    val quiz = Quiz()
+//    quiz.printQuiz()
+
+//    val quiz = Quiz().apply { printQuiz() }
+
+    Quiz().apply { printQuiz() }
 }
