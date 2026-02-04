@@ -4,7 +4,7 @@ enum class Difficulty{
     HARD
 }
 
-class Question<T>(
+data class Question<T>(
     val questionText : String,
     val anserw : T,
     val difficulrt : Difficulty
