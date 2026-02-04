@@ -58,5 +58,21 @@ fun main(){
 //    println(solarSystem.contains("Pluto"))
 //    println("Future Moon" in solarSystem)
 
+    val solarSystem = mutableListOf("Mercury", "Venus", "Earth", "Mars","Jupiter", "Saturn", "Uranus", "Neptune")
+
+    println(solarSystem.size)
+    solarSystem.add("Pluto")
+
+    println(solarSystem.contains("Pluto"))
+
+    println("Pluto" in solarSystem)
+
+    solarSystem.add("Pluto")
+    println(solarSystem.size)
+
+    solarSystem.remove("Pluto")
+    println(solarSystem.size)
+    println(solarSystem.contains("Pluto"))
+
 
 }
