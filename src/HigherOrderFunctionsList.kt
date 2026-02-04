@@ -55,11 +55,19 @@ fun main(){
 //        println("Пункт меню ${it.name}")
 //    }
 
-    val fillMenu = cookies.map{
-        "${it.name} - ${it.price}"
+//    val fillMenu = cookies.map{
+//        "${it.name} - ${it.price}"
+//    }
+//    println("Полное меню")
+//    fillMenu.forEach {
+//        println(it)
+//    }
+
+    val softBakedMenu = cookies.filter {
+        it.softBaked
     }
-    println("Полное меню")
-    fillMenu.forEach {
-        println(it)
+    println("Мягкое печенья")
+    softBakedMenu.forEach {
+        println("${it.name} - ${it.price}")
     }
 }
